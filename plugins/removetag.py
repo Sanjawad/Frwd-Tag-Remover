@@ -2,9 +2,9 @@ import pyrogram
 import os
 from pyrogram import Client, filters
 from pyrogram.types import Message, User
-from bot import DevelopedBots
+from bot import class10th11thnotes
 
-@DevelopedBots.on_message(filters.forwarded & filters.channel)
+@class10th11thnotes.on_message(filters.forwarded & filters.channel)
 async def channeltag(bot, message):
    try:
        chat_id = message.chat.id
